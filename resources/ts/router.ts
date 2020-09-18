@@ -8,7 +8,7 @@ import CreateComponent from "./components/create.component.vue";
 export const router = new VueRouter({
   mode: "history",
   routes: [
-    { path: "/", name: "show", component: ListingComponent },
+    { path: "/show", name: "show", component: ListingComponent },
     { path: "/create", name: "create", component: CreateComponent },
   ]
 });
