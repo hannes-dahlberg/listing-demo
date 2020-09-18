@@ -27,7 +27,7 @@ class StoreListing extends FormRequest
             "title" => "required|max:255",
             "price" => "required|numeric",
             "address" => "required|max:255",
-            "contact_name" => "required|alpha|max:255",
+            "contact_name" => "required|max:255",
             "contact_email" => "required|email",
             "contact_phone" => "required|max:255",
         ];
