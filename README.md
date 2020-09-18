@@ -13,9 +13,14 @@ Set .env file to:
 DB_CONNECTION=sqlite
 DB_DATABASE=db.sqlite
 ```
-and create empty `db.sqlite` file in `./database` folder (`$ touch db.sqlite`).
+and create empty `db.sqlite` file in `./database` folder (`$ touch ./database/db.sqlite`).
 
-Run server with:
+Migrate database with:
+```
+$ php artisan migrate
+```
+
+Run server and build/watch SPA with:
 ```
 $ php artisan serve
 $ npm run watch
