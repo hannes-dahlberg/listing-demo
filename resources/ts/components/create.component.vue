@@ -2,7 +2,6 @@
   <div class="create">
     <card-component>
       <template v-slot:header>
-        <h5 class="create__header">Header</h5>
       </template>
       <template v-slot:default>
         <form v-on:submit.prevent="createListing">
