@@ -28,5 +28,5 @@ $ npm run watch
 Navigate to http://127.0.0.1:8000 to start using application
 
 # TODO
-- Validation in front-end could be done better with validation from server getting through to the user. Or even better make sure the create form validates email and such to not be able to submit at all before form is actually valid
+- Validation in front-end could be done better. Either by forwarding validation errors from API to user or validate form before submitting
 - ListingService.php does not specify the Listing model as DP. Could this be solved with Laravel Facade or similar?
