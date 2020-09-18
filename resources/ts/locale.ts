@@ -9,8 +9,17 @@ export const i18n = new VueI18n({
         "show": "Show",
         "create": "Create"
       },
+      "show": {
+        "empty_list": {
+          "header": "Empty List",
+          "text": {
+            "text": "No listings exists. {0}.",
+            "link": "Try creating one"
+          }
+        }
+      },
       "listing": {
-        "listing": "Listing | Listings",
+        "listing": "Listing",
         "title": "Title",
         "price": "Price",
         "address": "Address",
@@ -19,7 +28,7 @@ export const i18n = new VueI18n({
           "name": "Name",
           "email": "Email",
           "phone": "Phone"
-        }
+        },
       }
     },
   }
