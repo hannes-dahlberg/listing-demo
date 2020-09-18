@@ -95,12 +95,12 @@ export default class CreateComponent extends Vue {
   }
 
   public form: IForm = {
-    title: "Foobar",
-    price: "30000",
-    address: "Gatan 3",
-    contactName: "John Johnsson",
-    contactEmail: "john@email.com",
-    contactPhone: "555 123 456",
+    title: "",
+    price: "",
+    address: "",
+    contactName: "",
+    contactEmail: "",
+    contactPhone: "",
   };
 
   public async createListing() {
