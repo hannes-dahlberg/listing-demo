@@ -44,7 +44,7 @@ class ListingService {
   public function all(): iterable 
   {
     // Get all listings from DB
-    $listings = \App\Models\Listing::orderBy("id", "desc")->get();
+    $listings = \App\Models\Listing::orderBy("created_at", "desc")->get();
 
     // Create empty array
     $returnArray = [];
