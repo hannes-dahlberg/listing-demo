@@ -1,26 +1,15 @@
 <template>
-  <nav>
-    <ul>
-      <li
-        v-for="(menuItem, index) in menu"
-        :key="`menuItem-${index}`"
-      >
-        <router-link :to="menuItem.route">{{ menuItem.title }}</router-link>
-      </li>
-    </ul>
-  </nav>
+  <navbar-component :menu="menu">
+  </navbar-component>
 </template>
 <script lang="ts">
 // Libs
 import { Component, Vue } from "vue-property-decorator";
-import { RawLocation } from "vue-router";
 
-interface IMenu {
-  title: string;
-  route: RawLocation;
-}
+// Components
+import NavbarComponent, { IMenu } from "./navbar.component.vue";
 
-@Component
+@Component({ components: { NavbarComponent } })
 export default class HeaderComponent extends Vue {
   public menu: IMenu[] = [
     {
@@ -34,3 +23,5 @@ export default class HeaderComponent extends Vue {
   ];
 }
 </script>
+<style lang="scss" scoped>
+</style>
