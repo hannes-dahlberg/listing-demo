@@ -1,5 +1,5 @@
 # Listing Demo
-Listing and creating listings of office spaces available to rent.
+Listing and crate listings of office spaces available to rent.
 
 # Get started
 Install DB's with
